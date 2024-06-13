@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>webThought</title>
+    <link rel="shortcut icon" href="/res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/res/home_origin.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img onclick="show_main('home', this)" src="/res/lightingcat.jpg" alt="ico" id="icon">
+            <li onclick="show_main('text', this)" id="textPageButton"><span>动态</span></li>
+            <li onclick="show_main('article', this)"><span>长文</span></li>
+            <li onclick="show_main('panel', this)"><span>panel</span></li>
+            <li onclick="show_main('reply', this)"><span>reply</span></li>
+            <button id="clear_cache" onclick="clear_cache()"></button>
+        </ul>
+    </header>
+    <main id="home">
+        <p>&nbsp;一个华科学生的个人空间</p>
+    </main>
+    <main id="text">
+        <div class="text_button_container">
+            <button id="text_left">取消</button>
+            <button id="text_right">发一条</button>
+        </div>
+        <div id="text_upload">
+            <textarea name="content" id="text_content" cols="30" rows="10"></textarea>
+            <div class="text_tag_container">
+                <input type="text" name="tag" id="text_tag">
+                <div class="text_taglist">
+                    <span class="tag" onclick="text_choose_tag(this)">sta</span>
+                    <span class="tag" onclick="text_choose_tag(this)">fel</span>
+                    <span class="tag" onclick="text_choose_tag(this)">tht</span>
+                    <span class="tag" onclick="text_choose_tag(this)">wow</span>
+                    <span class="tag" onclick="text_choose_tag(this)">site</span>
+                </div>
+            </div>
+            <div class="text_image">
+                <img src="/res/upload.png" alt="上传图片" id="text_image_preview">
+                <input type="file" accept="image/*" id="text_image">
+            </div>
+        </div>
+        <div class="text_temp" data-index="0">
+            <span class="tag" onclick="light_tag(this)">tag</span>
+            <span class="moreopt" onclick="text_show_options(this)">...</span>
+            <div class="options">
+                <div class="cancel" onclick="text_options_discard(this)">取消</div>
+                <div class="edit" onclick="text_options_edit(this)">编辑</div>
+                <div class="delete" onclick="text_options_delete(this)">删除</div>
+            </div>
+            <p class="content">content</p>
+            <img class="image" src="" alt="动态图片">
+            <span class="time">time</span>
+        </div>
+        <div id="text_load" onclick="get_text(7)"><span onclick="effect(this)">Load More</span></div>
+    </main>
+    <main id="article"></main>
+    <main id="panel"></main>
+    <main id="reply"></main>
+    <script type="text/javascript" src="/res/home.js"></script>
+</body>
+
+</html>
