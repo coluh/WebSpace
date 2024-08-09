@@ -1,6 +1,6 @@
 ## webspace
 
-A personal blog site.
+个人小网站, 代码乱乱的, 没什么参考价值, 仅留作纪念.
 
 #### structure
 
@@ -31,7 +31,7 @@ A personal blog site.
 └── webblog.code-workspace
 ```
 
-#### How is it?
+#### why
 
-well I would rewrite this program when I learn more about Web Development...
+当动态发, 既然不求回复, 不如只给自己看
 
