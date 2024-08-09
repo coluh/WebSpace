@@ -6,6 +6,7 @@
 body {
     width: 100%;
     background-image: url(/res/bgi.jpg);
+    background: linear-gradient(200deg, skyblue, 70%, pink);
     background-size: 100% auto;
     background-attachment: fixed;
 }
